@@ -1,0 +1,6 @@
+Invoking command in '/home/duckiebot/duckietown/ros2_ws/build/ros_cap': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/duckiebot/duckietown/ros2_ws/src/ros_cap -DCMAKE_INSTALL_PREFIX=/home/duckiebot/duckietown/ros2_ws/install/ros_cap
+Invoked command in '/home/duckiebot/duckietown/ros2_ws/build/ros_cap' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/duckiebot/duckietown/ros2_ws/src/ros_cap -DCMAKE_INSTALL_PREFIX=/home/duckiebot/duckietown/ros2_ws/install/ros_cap
+Invoking command in '/home/duckiebot/duckietown/ros2_ws/build/ros_cap': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/duckiebot/duckietown/ros2_ws/build/ros_cap -- -j4 -l4
+Invoked command in '/home/duckiebot/duckietown/ros2_ws/build/ros_cap' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/duckiebot/duckietown/ros2_ws/build/ros_cap -- -j4 -l4
+Invoking command in '/home/duckiebot/duckietown/ros2_ws/build/ros_cap': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/duckiebot/duckietown/ros2_ws/build/ros_cap
+Invoked command in '/home/duckiebot/duckietown/ros2_ws/build/ros_cap' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/duckiebot/duckietown/ros2_ws/build/ros_cap

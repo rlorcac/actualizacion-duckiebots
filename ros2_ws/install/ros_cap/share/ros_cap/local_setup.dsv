@@ -1,0 +1,2 @@
+source;share/ros_cap/environment/ament_prefix_path.sh
+source;share/ros_cap/environment/path.sh

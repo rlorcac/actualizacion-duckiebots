@@ -1,0 +1,15 @@
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ament_index/resource_index/package_run_dependencies/ros_cap
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ament_index/resource_index/parent_prefix_path/ros_cap
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/environment/ament_prefix_path.sh
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/environment/ament_prefix_path.dsv
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/environment/path.sh
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/environment/path.dsv
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/local_setup.bash
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/local_setup.sh
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/local_setup.zsh
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/local_setup.dsv
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/package.dsv
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ament_index/resource_index/packages/ros_cap
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/cmake/ros_capConfig.cmake
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/cmake/ros_capConfig-version.cmake
+/home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/package.xml

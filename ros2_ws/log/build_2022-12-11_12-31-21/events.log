@@ -1,0 +1,164 @@
+[0.000000] (-) TimerEvent: {}
+[0.004170] (ros_cap) JobQueued: {'identifier': 'ros_cap', 'dependencies': OrderedDict()}
+[0.009948] (ros_cap) JobStarted: {'identifier': 'ros_cap'}
+[0.096717] (-) TimerEvent: {}
+[0.152148] (ros_cap) JobProgress: {'identifier': 'ros_cap', 'progress': 'cmake'}
+[0.153613] (ros_cap) Command: {'cmd': ['/usr/bin/cmake', '/home/duckiebot/duckietown/ros2_ws/src/ros_cap', '-DCMAKE_INSTALL_PREFIX=/home/duckiebot/duckietown/ros2_ws/install/ros_cap'], 'cwd': '/home/duckiebot/duckietown/ros2_ws/build/ros_cap', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,1030,1'), ('BYOBU_SED', 'sed'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('BYOBU_EDITOR', 'sensible-editor'), ('USER', 'duckiebot'), ('SSH_CLIENT', '10.42.0.1 56820 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/duckiebot'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/home/duckiebot/duckietown/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '3.2a'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('BYOBU_PREFIX', '/usr'), ('_byobu_sourced', '1'), ('LC_MONETARY', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('BYOBU_WINDOW_NAME', '-'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'duckiebot'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('BYOBU_ACCENT', '\\#75507B'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'screen-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('BYOBU_DATE', '%Y-%m-%d'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/duckiebot/.byobu'), ('LC_MEASUREMENT', 'C.UTF-8'), ('BYOBU_PAGER', 'sensible-pager'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('BYOBU_DARK', '\\#333333'), ('BYOBU_RUN_DIR', '/dev/shm/byobu-duckiebot-eEyxVrHD'), ('PWD', '/home/duckiebot/duckietown/ros2_ws/build/ros_cap'), ('SSH_CONNECTION', '10.42.0.1 56820 10.42.0.31 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('TMUX_PANE', '%1'), ('BYOBU_TTY', '/dev/pts/0'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.196946] (-) TimerEvent: {}
+[0.298420] (-) TimerEvent: {}
+[0.400051] (-) TimerEvent: {}
+[0.501683] (-) TimerEvent: {}
+[0.603330] (-) TimerEvent: {}
+[0.704639] (-) TimerEvent: {}
+[0.806014] (-) TimerEvent: {}
+[0.907411] (-) TimerEvent: {}
+[1.009130] (-) TimerEvent: {}
+[1.110863] (-) TimerEvent: {}
+[1.212283] (-) TimerEvent: {}
+[1.313540] (-) TimerEvent: {}
+[1.414832] (-) TimerEvent: {}
+[1.516349] (-) TimerEvent: {}
+[1.617887] (-) TimerEvent: {}
+[1.719484] (-) TimerEvent: {}
+[1.844776] (-) TimerEvent: {}
+[1.947542] (-) TimerEvent: {}
+[2.049054] (-) TimerEvent: {}
+[2.150447] (-) TimerEvent: {}
+[2.251800] (-) TimerEvent: {}
+[2.260271] (ros_cap) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[2.352045] (-) TimerEvent: {}
+[2.453405] (-) TimerEvent: {}
+[2.555019] (-) TimerEvent: {}
+[2.656798] (-) TimerEvent: {}
+[2.758657] (-) TimerEvent: {}
+[2.860804] (-) TimerEvent: {}
+[2.962717] (-) TimerEvent: {}
+[3.064136] (-) TimerEvent: {}
+[3.165873] (-) TimerEvent: {}
+[3.267699] (-) TimerEvent: {}
+[3.369328] (-) TimerEvent: {}
+[3.471137] (-) TimerEvent: {}
+[3.572694] (-) TimerEvent: {}
+[3.674156] (-) TimerEvent: {}
+[3.775787] (-) TimerEvent: {}
+[3.877380] (-) TimerEvent: {}
+[3.948486] (ros_cap) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[3.977667] (-) TimerEvent: {}
+[4.047475] (ros_cap) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.078048] (-) TimerEvent: {}
+[4.179295] (-) TimerEvent: {}
+[4.280501] (-) TimerEvent: {}
+[4.382023] (-) TimerEvent: {}
+[4.483436] (-) TimerEvent: {}
+[4.584786] (-) TimerEvent: {}
+[4.686170] (-) TimerEvent: {}
+[4.787939] (-) TimerEvent: {}
+[4.816861] (ros_cap) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[4.884250] (ros_cap) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[4.888076] (-) TimerEvent: {}
+[4.890774] (ros_cap) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.897323] (ros_cap) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[4.933287] (ros_cap) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.988414] (-) TimerEvent: {}
+[5.089575] (-) TimerEvent: {}
+[5.191302] (-) TimerEvent: {}
+[5.292640] (-) TimerEvent: {}
+[5.394037] (-) TimerEvent: {}
+[5.495420] (-) TimerEvent: {}
+[5.596886] (-) TimerEvent: {}
+[5.698330] (-) TimerEvent: {}
+[5.740624] (ros_cap) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.798632] (-) TimerEvent: {}
+[5.816699] (ros_cap) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.819264] (ros_cap) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.823834] (ros_cap) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.888166] (ros_cap) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.898910] (-) TimerEvent: {}
+[6.000104] (-) TimerEvent: {}
+[6.101452] (-) TimerEvent: {}
+[6.202832] (-) TimerEvent: {}
+[6.304107] (-) TimerEvent: {}
+[6.405334] (-) TimerEvent: {}
+[6.506730] (-) TimerEvent: {}
+[6.607975] (-) TimerEvent: {}
+[6.709298] (-) TimerEvent: {}
+[6.810961] (-) TimerEvent: {}
+[6.912330] (-) TimerEvent: {}
+[7.013564] (-) TimerEvent: {}
+[7.114960] (-) TimerEvent: {}
+[7.216281] (-) TimerEvent: {}
+[7.317664] (-) TimerEvent: {}
+[7.418961] (-) TimerEvent: {}
+[7.520185] (-) TimerEvent: {}
+[7.621470] (-) TimerEvent: {}
+[7.722913] (-) TimerEvent: {}
+[7.793333] (ros_cap) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[7.823266] (-) TimerEvent: {}
+[7.924904] (-) TimerEvent: {}
+[8.026397] (-) TimerEvent: {}
+[8.127793] (-) TimerEvent: {}
+[8.229057] (-) TimerEvent: {}
+[8.330331] (-) TimerEvent: {}
+[8.431619] (-) TimerEvent: {}
+[8.533100] (-) TimerEvent: {}
+[8.634370] (-) TimerEvent: {}
+[8.735638] (-) TimerEvent: {}
+[8.837107] (-) TimerEvent: {}
+[8.938670] (-) TimerEvent: {}
+[9.039912] (-) TimerEvent: {}
+[9.141121] (-) TimerEvent: {}
+[9.185027] (ros_cap) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.241350] (-) TimerEvent: {}
+[9.342662] (-) TimerEvent: {}
+[9.443947] (-) TimerEvent: {}
+[9.545294] (-) TimerEvent: {}
+[9.646624] (-) TimerEvent: {}
+[9.747985] (-) TimerEvent: {}
+[9.853034] (-) TimerEvent: {}
+[9.954590] (-) TimerEvent: {}
+[10.055815] (-) TimerEvent: {}
+[10.157026] (-) TimerEvent: {}
+[10.238168] (ros_cap) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.257278] (-) TimerEvent: {}
+[10.262394] (ros_cap) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.283151] (ros_cap) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.325733] (ros_cap) StdoutLine: {'line': b'-- Generating done\n'}
+[10.336205] (ros_cap) StdoutLine: {'line': b'-- Build files have been written to: /home/duckiebot/duckietown/ros2_ws/build/ros_cap\n'}
+[10.357695] (-) TimerEvent: {}
+[10.371410] (ros_cap) CommandEnded: {'returncode': 0}
+[10.375926] (ros_cap) JobProgress: {'identifier': 'ros_cap', 'progress': 'build'}
+[10.382166] (ros_cap) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/duckiebot/duckietown/ros2_ws/build/ros_cap', '--', '-j4', '-l4'], 'cwd': '/home/duckiebot/duckietown/ros2_ws/build/ros_cap', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,1030,1'), ('BYOBU_SED', 'sed'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('BYOBU_EDITOR', 'sensible-editor'), ('USER', 'duckiebot'), ('SSH_CLIENT', '10.42.0.1 56820 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/duckiebot'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/home/duckiebot/duckietown/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '3.2a'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('BYOBU_PREFIX', '/usr'), ('_byobu_sourced', '1'), ('LC_MONETARY', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('BYOBU_WINDOW_NAME', '-'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'duckiebot'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('BYOBU_ACCENT', '\\#75507B'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'screen-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('BYOBU_DATE', '%Y-%m-%d'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/duckiebot/.byobu'), ('LC_MEASUREMENT', 'C.UTF-8'), ('BYOBU_PAGER', 'sensible-pager'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('BYOBU_DARK', '\\#333333'), ('BYOBU_RUN_DIR', '/dev/shm/byobu-duckiebot-eEyxVrHD'), ('PWD', '/home/duckiebot/duckietown/ros2_ws/build/ros_cap'), ('SSH_CONNECTION', '10.42.0.1 56820 10.42.0.31 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('TMUX_PANE', '%1'), ('BYOBU_TTY', '/dev/pts/0'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.458006] (-) TimerEvent: {}
+[10.559484] (-) TimerEvent: {}
+[10.661013] (-) TimerEvent: {}
+[10.695415] (ros_cap) CommandEnded: {'returncode': 0}
+[10.761324] (-) TimerEvent: {}
+[10.862812] (-) TimerEvent: {}
+[10.922544] (ros_cap) JobProgress: {'identifier': 'ros_cap', 'progress': 'install'}
+[10.963120] (-) TimerEvent: {}
+[10.994112] (ros_cap) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/duckiebot/duckietown/ros2_ws/build/ros_cap'], 'cwd': '/home/duckiebot/duckietown/ros2_ws/build/ros_cap', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,1030,1'), ('BYOBU_SED', 'sed'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('BYOBU_EDITOR', 'sensible-editor'), ('USER', 'duckiebot'), ('SSH_CLIENT', '10.42.0.1 56820 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/duckiebot'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/home/duckiebot/duckietown/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '3.2a'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('BYOBU_PREFIX', '/usr'), ('_byobu_sourced', '1'), ('LC_MONETARY', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('BYOBU_WINDOW_NAME', '-'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'duckiebot'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('BYOBU_ACCENT', '\\#75507B'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'screen-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('BYOBU_DATE', '%Y-%m-%d'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/duckiebot/.byobu'), ('LC_MEASUREMENT', 'C.UTF-8'), ('BYOBU_PAGER', 'sensible-pager'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('BYOBU_DARK', '\\#333333'), ('BYOBU_RUN_DIR', '/dev/shm/byobu-duckiebot-eEyxVrHD'), ('PWD', '/home/duckiebot/duckietown/ros2_ws/build/ros_cap'), ('SSH_CONNECTION', '10.42.0.1 56820 10.42.0.31 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('TMUX_PANE', '%1'), ('BYOBU_TTY', '/dev/pts/0'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[11.052222] (ros_cap) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.054569] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ament_index/resource_index/package_run_dependencies/ros_cap\n'}
+[11.058341] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ament_index/resource_index/parent_prefix_path/ros_cap\n'}
+[11.061708] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/environment/ament_prefix_path.sh\n'}
+[11.063285] (-) TimerEvent: {}
+[11.064387] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/environment/ament_prefix_path.dsv\n'}
+[11.067346] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/environment/path.sh\n'}
+[11.069642] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/environment/path.dsv\n'}
+[11.072165] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/local_setup.bash\n'}
+[11.075080] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/local_setup.sh\n'}
+[11.077346] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/local_setup.zsh\n'}
+[11.079920] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/local_setup.dsv\n'}
+[11.082425] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/package.dsv\n'}
+[11.085574] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ament_index/resource_index/packages/ros_cap\n'}
+[11.088690] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/cmake/ros_capConfig.cmake\n'}
+[11.090944] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/cmake/ros_capConfig-version.cmake\n'}
+[11.093431] (ros_cap) StdoutLine: {'line': b'-- Installing: /home/duckiebot/duckietown/ros2_ws/install/ros_cap/share/ros_cap/package.xml\n'}
+[11.106197] (ros_cap) CommandEnded: {'returncode': 0}
+[11.163581] (-) TimerEvent: {}
+[11.265523] (-) TimerEvent: {}
+[11.367330] (-) TimerEvent: {}
+[11.468541] (-) TimerEvent: {}
+[11.575194] (-) TimerEvent: {}
+[11.653379] (ros_cap) JobEnded: {'identifier': 'ros_cap', 'rc': 0}
+[11.659680] (-) EventReactorShutdown: {}
