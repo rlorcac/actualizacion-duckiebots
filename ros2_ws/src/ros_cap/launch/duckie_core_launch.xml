@@ -9,11 +9,8 @@
     <arg name="cam_info" default="true" doc="If set to true, use cam_info_reader_node to pusblish CameraInfo."/>
     <arg name="live" default="true" doc="live set to false means we don't run the actual camera (i.e. running from a log file" />
 
-
-
-    <include file="$(find duckietown)/machines"/>
     <!-- joy -->
-    <node namespace="$(arg veh)" pkg="joy" type="joy_node" name="joy" output="screen">
+    <node namespace="$(arg veh)" machine="$(arg veh)"machine="$(arg veh)" pkg="joy" type="joy_node" name="joy" output="screen">
         <rosparam command="load" file="$(find duckietown)/config/$(arg config)/joy/joy_node/$(arg param_file_name).yaml"/>
     </node>
 
