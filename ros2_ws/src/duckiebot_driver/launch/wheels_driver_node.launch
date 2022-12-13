@@ -1,0 +1,14 @@
+<launch>
+	<arg name="port" doc="Serial port" default="/dev/ttyAMA0" />
+	<arg name="baudrate" doc="Serial communication baudrate" default="57600" />
+    <arg name="veh" doc="Name of vehicle. ex: megaman"/>
+    
+    <node ns="$(arg veh)" pkg="duckiebot_driver" type="wheels_driver_node.py" name="wheels_driver_node" output="screen" clear_params="true" required="true">
+    	<param name="baudrate" value="$(arg baudrate)" />
+    	<param name="port" value="$(arg port)" />
+    </node>
+    
+    <!-- Subscriptions -->
+    <!-- "~wheels_cmd": duckietown_msgs/WheelsCmd. Command for the wheels -->
+
+</launch>
