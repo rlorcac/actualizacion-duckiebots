@@ -1,9 +1,0 @@
-/home/duckiebot/duckietown/ros2_ws/build/ros_cap/CMakeFiles/uninstall.dir
-/home/duckiebot/duckietown/ros2_ws/build/ros_cap/CMakeFiles/ros_cap_uninstall.dir
-/home/duckiebot/duckietown/ros2_ws/build/ros_cap/CMakeFiles/test.dir
-/home/duckiebot/duckietown/ros2_ws/build/ros_cap/CMakeFiles/edit_cache.dir
-/home/duckiebot/duckietown/ros2_ws/build/ros_cap/CMakeFiles/rebuild_cache.dir
-/home/duckiebot/duckietown/ros2_ws/build/ros_cap/CMakeFiles/list_install_components.dir
-/home/duckiebot/duckietown/ros2_ws/build/ros_cap/CMakeFiles/install.dir
-/home/duckiebot/duckietown/ros2_ws/build/ros_cap/CMakeFiles/install/local.dir
-/home/duckiebot/duckietown/ros2_ws/build/ros_cap/CMakeFiles/install/strip.dir
