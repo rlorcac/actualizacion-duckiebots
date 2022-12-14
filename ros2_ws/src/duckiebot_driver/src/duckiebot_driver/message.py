@@ -69,7 +69,7 @@ class DuckietownCommand(Message):
     def serialize(self):
         try:
             self.check()
-            return  [ord(a) for a in list(DuckietownCommand._struct.pack(int(self.led), self.pwm_ch1, self.pwm_ch2))]
+            return  [a for a in list(DuckietownCommand._struct.pack(int(self.led), self.pwm_ch1, self.pwm_ch2))]
         except struct.error:
             raise SerializationError('Error in serialization {}'.format(self.__str__))
         
