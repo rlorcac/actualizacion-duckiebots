@@ -9,7 +9,7 @@ setup(
     version='0.0.0',
     packages=[package_name],
     data_files=[
-        (os.path.join('share',ros_cap),glob('launch/*.xml')),
+        (os.path.join('share', 'ros_cap'), glob('launch/*.xml')),
         'launch/duckie_core.xml',
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
