@@ -91,8 +91,8 @@ class WheelsDriverNode(Node):
 		self.driver.send_command(self.cmd)
 		self.get_logger().info("[%s] Shutting down."%(self.node_name))
 
-if __name__ == '__main__':
-	# Initialize rclpy
+def main():
+    # Initialize rclpy
 	rclpy.init(args=sys.argv)
 	# Create node
 	wheels_driver = WheelsDriverNode()
@@ -101,3 +101,6 @@ if __name__ == '__main__':
 		rclpy.spin(wheels_driver)
 	except KeyboardInterrupt:
 		wheels_driver.on_shutdown()
+
+if __name__ == '__main__':
+    main()
