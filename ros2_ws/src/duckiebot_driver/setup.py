@@ -23,6 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+        	'wheels_driver_node = duckiebot_driver.wheels_driver_node:main'
         ],
     },
 )
