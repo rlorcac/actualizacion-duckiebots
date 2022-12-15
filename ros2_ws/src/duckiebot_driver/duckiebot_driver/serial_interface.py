@@ -86,7 +86,7 @@ class DuckietownSerial(object):
 
         # packet: FF  FF  ID LENGTH INSTRUCTION PARAM_1 ... CHECKSUM
         packet = [0xFF, 0xFF, servo_id, length, DuckietownSerial.READ_DATA, address, size, checksum]
-        packetStr = array('B', packet).tostring() # same as: packetStr = ''.join([chr(byte) for byte in packet])
+        packetStr = array('B', packet).tobytes() # same as: packetStr = ''.join([chr(byte) for byte in packet])
 
         with self.serial_mutex:
             self.__write_serial(packetStr)
@@ -115,7 +115,7 @@ class DuckietownSerial(object):
         packet.extend(data)
         packet.append(checksum)
 
-        packetStr = ''.join([chr(byte) for byte in packet]) # packetStr = array('B', packet).tostring() # version vieja
+        packetStr = array('B', packet).tobytes() # 
 
         with self.serial_mutex:
             self.__write_serial(packetStr)
@@ -144,7 +144,7 @@ class DuckietownSerial(object):
 
         # packet: FF  FF  ID LENGTH INSTRUCTION CHECKSUM
         packet = [0xFF, 0xFF, servo_id, length, DuckietownSerial.PING, checksum]
-        packetStr = array('B', packet).tostring() # packetStr = array('B', packet).tostring()
+        packetStr = array('B', packet).tobytes() # packetStr = ''.join([chr(byte) for byte in packet])
 
         with self.serial_mutex:
             self.__write_serial(packetStr)
