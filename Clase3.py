@@ -20,12 +20,12 @@ def freno(B, controls):
 		controls = [0 for elem in controls]
 	return (B, controls)
 
-class Template(object):
-    def __init__(self, args):
-        super(Template, self).__init__()
+class Template(Node):
+    def __init__(self, node_name="test", args=None):
+        super().__init__(node_name)
         self.args = args
-        self.sub = node.create_subscription(Joy, "/duckiebot/joy",self.callback) #Cambio de la estrucutra del subscriber
-        self.pub = node.create_publisher(Twist2DStamped,"/duckiebot/wheels_driver_node/car_cmd", queue_size=10) #Cambio de la estuctura del Publisher
+        self.sub = node.create_subscription(Joy, "/duckiebot/joy", self.callback, qos_profile=0) #Cambio de la estrucutra del subscriber
+        self.pub = self.create_publisher(Twist2DStamped,"/duckiebot/wheels_driver_node/car_cmd", qos_profile=0) #Cambio de la estuctura del Publisher
 
     def publicar(self, B, controls):
         msg = Twist2DStamped()
@@ -48,13 +48,12 @@ class Template(object):
 
 def main():
     rclpy.init(args=sys.argv)
-    node = rclpy.create_node('clase 3') #creacion y registro del nodo!
-
-    obj = Template('args') # Crea un objeto del tipo Template, cuya definicion se encuentra arriba
+    node = Template(node_name='clase_3') #creacion y registro del nodo!
+    # Crea un objeto del tipo Template, cuya definicion se encuentra arriba
 
 	#objeto.publicar() #llama al metodo publicar del objeto obj de tipo Template
 
-    rclpy.spin() #funcion de ROS que evita que el programa termine -  se debe usar en  Subscribers
+    rclpy.spin(node) #funcion de ROS que evita que el programa termine -  se debe usar en  Subscribers
 
 
 if __name__ =='__main__':
