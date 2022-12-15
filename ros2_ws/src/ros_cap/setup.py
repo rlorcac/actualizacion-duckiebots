@@ -7,6 +7,7 @@ setup(
     version='0.0.0',
     packages=[package_name],
     data_files=[
+        'launch/duckie_core.xml',
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
