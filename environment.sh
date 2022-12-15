@@ -7,7 +7,7 @@ echo
 
 echo "Setting up PYTHONPATH."
 echo "Note: We assume you cloned the Software repository in the folder 'duckietown' at home"
-export PYTHONPATH=$HOME/duckietown/catkin_ws/src:$PYTHONPATH
+export PYTHONPATH=$HOME/duckietown/ros2_ws/src:$PYTHONPATH
 echo
 
 echo "Setup ROS_HOSTNAME."
@@ -24,7 +24,7 @@ echo "...done"
 echo
 
 echo "Activating development."
-source $DUCKIETOWN_ROOT/catkin_ws/devel/setup.bash
+source $DUCKIETOWN_ROOT/ros2_ws/install/local_setup.bash
 
 # TODO: check that the time is >= 2015
 
