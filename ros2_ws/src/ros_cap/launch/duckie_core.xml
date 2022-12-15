@@ -10,7 +10,7 @@
     <arg name="live" default="true"/> <!-- doc="live set to false means we don't run the actual camera (i.e. running from a log file" /> -->
 
     <!-- joy -->
-    <node namespace="$(var veh)" machine="$(var veh)" pkg="joy" exec="joy_node" name="joy">
+    <node namespace="$(var veh)" pkg="joy" exec="joy_node" name="joy">
         <!-- <rosparam command="load" file="$(find duckietown)/config/$(arg config)/joy/joy_node/$(arg param_file_name).yaml"/> -->
     </node>
 
@@ -34,7 +34,7 @@
     -->
 
     <!-- Camera -->
-    <node machine="$(var veh)" pkg="v4l2_camera" exec="v4l2_camera_node" name="v4l2_camera"></node>
+    <node namespace="$(var veh)" pkg="v4l2_camera" exec="v4l2_camera_node" name="v4l2_camera"></node>
     <!--
     <include file="$(find duckietown)/launch/camera.launch">
 	<arg name="veh" value="$(arg veh)"/>
