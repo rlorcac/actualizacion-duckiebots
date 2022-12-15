@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import rclpy #importar ros para python
-from rclpy.node import node 
+from rclpy.node import Node 
 from sensor_msgs.msg import Joy  # joystick
 from duckietown_msgs.msg import Twist2DStamped #ruedas
 import sys 
@@ -24,15 +24,15 @@ class Template(Node):
     def __init__(self, node_name="test", args=None):
         super().__init__(node_name)
         self.args = args
-        self.sub = node.create_subscription(Joy, "/duckiebot/joy", self.callback, qos_profile=0) #Cambio de la estrucutra del subscriber
+        self.sub = self.create_subscription(Joy, "/duckiebot/joy", self.callback, qos_profile=0) #Cambio de la estrucutra del subscriber
         self.pub = self.create_publisher(Twist2DStamped,"/duckiebot/wheels_driver_node/car_cmd", qos_profile=0) #Cambio de la estuctura del Publisher
 
     def publicar(self, B, controls):
         msg = Twist2DStamped()
         (B, controls) = freno(B, controls)
         vel = -controls[1]
-        msg.v = vel # [-1,1]
-        turn = controls[2]
+        msg.v = float(vel) # [-1,1]
+        turn = float(controls[2])
         msg.omega = _linmap([-1,1], [-15, 15], turn) # [-20,20]
         self.pub.publish(msg)
 
