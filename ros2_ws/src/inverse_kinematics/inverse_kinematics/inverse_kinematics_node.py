@@ -99,7 +99,11 @@ class InverseKinematicsNode(Node):
         self.get_logger().info("[%s] %s = %s " % (self.node_name, param_name, value))
         return value
 
-if __name__ == '__main__':
+def main():
     rclpy.init()
     inverse_kinematics_node = InverseKinematicsNode('inverse_kinematics_node')
     rclpy.spin(inverse_kinematics_node)
+    
+   
+if __name__ == '__main__':
+    main()
