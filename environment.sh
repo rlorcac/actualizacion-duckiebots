@@ -17,12 +17,7 @@ echo
 
 echo "Setup ROS_MASTER"
 export ROS_MASTER_URI=http://duckiebot.local:11311/
-
-echo "Building machines file..."
-make -C  $DUCKIETOWN_ROOT
-echo "...done"
 echo
-
 echo "Activating development."
 source $DUCKIETOWN_ROOT/ros2_ws/install/local_setup.bash
 
