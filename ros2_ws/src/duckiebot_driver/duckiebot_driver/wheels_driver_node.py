@@ -15,14 +15,14 @@ from duckiebot_driver.serial_interface import DuckietownSerial
 from duckiebot_driver.message import DuckietownCommand, DuckietownStatus
 
 class WheelsDriverNode(Node):
-	def __init__(self):
-		self.node_name = 'wheels_driver_node'
+	def __init__(self, node_name):
+		self.node_name = node_name
 		super().__init__(self.node_name)
 		self.get_logger().info("[%s] Initializing " %(self.node_name))
 		self.estop=False
 		# Driver parameters
 		self.declare_parameter('~/baudrate', 57600)
-		self.declare_parameter('~/port', '/dev/ttyAMA0')
+		self.declare_parameter('~/port', '/dev/ttyS0')
 		self.baudrate = self.get_parameter('~/baudrate').value
 		self.port = self.get_parameter('~/port').value
 		self.get_logger().info("Using port {} at {} baud/s".format(self.port, self.baudrate))
@@ -31,17 +31,21 @@ class WheelsDriverNode(Node):
 		self.driver = DuckietownSerial(self.port, self.baudrate)
 		self.cmd = DuckietownCommand()
 		self.status = DuckietownStatus()
+		#self.get_logger().info("Set up serial connection")
 		
 		# Add publisher for wheels command wih execution time
 		self.msg_wheels_cmd = WheelsCmdStamped()
 		self.pub_wheels_cmd = self.create_publisher(WheelsCmdStamped, "~/wheels_cmd_executed", qos_profile=0)
+		#self.get_logger().info("Created publisher at ~/wheels_cmd_executed")
 		
 		# Setup subscribers
 		self.control_constant = 1.0
 		self.sub_topic = self.create_subscription(WheelsCmdStamped, "~/wheels_cmd", self.wheel_command_cb,  qos_profile=0)
 		self.sub_e_stop = self.create_subscription(BoolStamped, "~/emergency_stop", self.emergency_stop_cb,  qos_profile=0)
+		#self.get_logger().info("Created subscribers at ~/wheels_cmd and ~/emergency_stop")
 	
 	def wheel_command_cb(self, msg):
+		#self.get_logger().info("Received message on ~/wheels_cmd")
 		if self.estop:
 			self.cmd.pwm_ch1 = 0
 			self.cmd.pwm_ch2 = 0
@@ -55,6 +59,8 @@ class WheelsDriverNode(Node):
 		# is reflected with respect to left motor
 		msg.vel_right = -min(max(msg.vel_right,-1.0),1.0)
 		
+		#self.get_logger().info("Saturation done")
+		
 		# L9110 use inverse logic
 		if msg.vel_left > 0.0:
 			self.cmd.pwm_ch1 = 255 - int(254*msg.vel_left)
@@ -66,17 +72,20 @@ class WheelsDriverNode(Node):
 		else:
 			self.cmd.pwm_ch2 = int(255*msg.vel_right)
 		self.driver.send_command(self.cmd)
+		
+		#self.get_logger().info("Logic done")
         
 		# debug prints
-		# print "left  cmd: {}".format(self.cmd.pwm_ch1)
-		# print "right cmd: {}".format(self.cmd.pwm_ch2)
+		self.get_logger().info("left  cmd: {}".format(self.cmd.pwm_ch1))
+		self.get_logger().info("right cmd: {}".format(self.cmd.pwm_ch2))
 		# Put the wheel commands in a message and publish
 		self.msg_wheels_cmd.header = msg.header
 		# Record the time the command was given to the wheels_driver
-		self.msg_wheels_cmd.header.stamp = self.get_clock().now()
+		self.msg_wheels_cmd.header.stamp = self.get_clock().now().to_msg()
 		self.msg_wheels_cmd.vel_left = msg.vel_left
 		self.msg_wheels_cmd.vel_right = msg.vel_right
 		self.pub_wheels_cmd.publish(self.msg_wheels_cmd)
+		#self.get_logger().info("Published on ~/wheels_cmd_executed")
 	
 	def emergency_stop_cb(self,msg):
 		self.estop = not self.estop
@@ -93,14 +102,12 @@ class WheelsDriverNode(Node):
 
 def main():
     # Initialize rclpy
-	rclpy.init(args=sys.argv)
+	rclpy.init()
 	# Create node
-	wheels_driver = WheelsDriverNode()
+	wheels_driver = WheelsDriverNode(node_name='wheels_driver_node')
 	# Setup proper shutdown behavior 
-	try: # Keep it spinning to keep the node alive
-		rclpy.spin(wheels_driver)
-	except KeyboardInterrupt:
-		wheels_driver.on_shutdown()
+	# Keep it spinning to keep the node alive
+	rclpy.spin(wheels_driver)
 
 if __name__ == '__main__':
     main()

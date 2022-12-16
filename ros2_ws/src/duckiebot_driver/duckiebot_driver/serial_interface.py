@@ -59,12 +59,13 @@ class DuckietownSerial(object):
             data.extend(self.ser.read(ord(data[3])))
             data = array('B', ''.join(data)).tolist()
         except Exception as e:
-            raise DroppedPacketError('Invalid response received from Duckietown %d. %s' % (servo_id, e))
+            pass
+        #    raise DroppedPacketError('Invalid response received from Duckietown %d. %s' % (servo_id, e)) # @TODO
 
         # verify checksum
-        checksum = 255 - sum(data[2:-1]) % 256
-        if not checksum == data[-1]: raise ChecksumError(servo_id, data, checksum)
-
+        # checksum = 255 - sum(data[2:-1]) % 256 @TODO
+        # if not checksum == data[-1]: pass # raise ChecksumError(servo_id, data, checksum) # @TODO
+        
         return data
 
     def read(self, servo_id, address, size):
@@ -166,6 +167,7 @@ class DuckietownSerial(object):
         Send Duckietown command
         """
         raw_data = cmd.serialize()
+        print("Serialized")
         self.write(DuckietownSerial.DEFAULT_ID, DuckietownSerial.LED, raw_data)
 
     def get_status(self, status):
