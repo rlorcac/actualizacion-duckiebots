@@ -1,0 +1,3 @@
+[submodule "ros2_ws/src/duckietown_msgs"]
+	path = ros2_ws/src/duckietown_msgs
+	url = https://github.com/nlimpert/duckietown_msgs
